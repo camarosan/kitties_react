@@ -557,7 +557,7 @@ class App extends Component {
                 {renderCatalogue()}
             </Route>
             <Route path="/marketplace">Select KittyID to see the Owner {/*marketplace page*/}
-                    <input type="number"  onChange={this.owner} ></input>
+                    <input type="number" min= "0" onChange={this.owner} ></input>
                     <span>{this.state.ownerKittyAddress}</span>
                     <br></br>
                     {this.state.sale.map( (value)=>{
