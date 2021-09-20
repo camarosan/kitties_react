@@ -68,7 +68,7 @@ class App extends Component {
 
   async loadBlockchainData() {// accounts, web3, contract instances and connection with metamask
     await window.ethereum.enable()
-    let web3 = new Web3(Web3.givenProvider || "wss://ropsten.infura.io/ws/v3/0336850f331a4fbe85621083466d7c93")
+    let web3 = new Web3(Web3.givenProvider || "wss://ropsten.infura.io/ws/v3/YOUR PROJECT ID ON INFURA")
     this.setState({web3: web3})
     const accounts = await this.state.web3.eth.getAccounts()
     this.setState({ account: accounts[0] })
