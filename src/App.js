@@ -489,7 +489,7 @@ class App extends Component {
             </p>
           </div>
           <Switch>
-            <Route exact path="/">
+            <Route exact path="/kitties_react/">
                 <div className="container p-1"   id= 'Kitties-Factory'>
                   <h1>Kitties-Factory</h1>  
                   <p>Create your custom Kitty -Contracts on Ropsten Network - Number of Kitties {this.state.count}</p>
@@ -552,11 +552,11 @@ class App extends Component {
                     </div>       
                 </div>
             </Route>
-            <Route path="/catalogue">   {/*catalogue page*/}
+            <Route path="/kitties_react/catalogue">   {/*catalogue page*/}
                 <button className="white-btn" onClick= {this.breedblokchain}>Breed two Kitties</button>
                 {renderCatalogue()}
             </Route>
-            <Route path="/marketplace">Select KittyID to see the Owner {/*marketplace page*/}
+            <Route path="/kitties_react/marketplace">Select KittyID to see the Owner {/*marketplace page*/}
                     <input type="number" min= "0" onChange={this.owner} ></input>
                     <span>{this.state.ownerKittyAddress}</span>
                     <br></br>
