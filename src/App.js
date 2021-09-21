@@ -483,9 +483,9 @@ class App extends Component {
         <Router> {/*to use routing for change between pages easily*/}
           <div className="light-b-shadow"  align = "center">
             <p className="bg-white pt-0">Academy-kitties
-            <Link to="/" ><button className ='red-btn'>Factory</button></Link>
-            <Link to="/catalogue"><button className ='red-btn'>Catalogue</button></Link>
-            <Link to= "/marketplace"><button className ='red-btn'>Marketplace</button>  </Link>
+            <Link to="/kitties_react/" ><button className ='red-btn'>Factory</button></Link>
+            <Link to="/kitties_react/catalogue"><button className ='red-btn'>Catalogue</button></Link>
+            <Link to= "/kitties_react/marketplace"><button className ='red-btn'>Marketplace</button>  </Link>
             </p>
           </div>
           <Switch>
